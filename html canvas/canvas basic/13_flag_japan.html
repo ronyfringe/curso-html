@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LA BANDERA DE JAPON</h2>
+<canvas id="myCanvas" width="300" height="200"
+style="border:1px solid black;">
+Your browser does not support the canvas element.
+</canvas>
+
+<style>
+    h2 {
+        margin-left: 10px;
+    }
+</style>
+
+<script>
+    var lienzo = document.getElementById("myCanvas");
+        if (lienzo && lienzo.getContext) {
+            var contexto = lienzo.getContext("2d");
+            if (contexto) {
+                var X = lienzo.width / 2;
+                var Y = lienzo.height / 2;
+                var r = 60;
+                //contexto.strokeStyle = "#006400";  es para trazar alrededor del círculo
+                contexto.fillStyle = "#E23D0B";
+                //contexto.lineWidth = 0; es para darle grosor a la línea alrededor del círculo
+                contexto.arc(X, Y, r, 0, 2 * Math.PI);
+                contexto.fill();
+                contexto.stroke();
+            
+            }
+        }
+</script>
+
+</body>
+</html>
