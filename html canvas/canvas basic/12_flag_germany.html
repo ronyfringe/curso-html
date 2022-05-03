@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LA BANDERA DE ALEMANIA</h2>
+<canvas id="myCanvas" width="350" height="210"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<style>
+    h2 {
+        margin-left: 10px;
+    }
+</style>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+//primera franja horizontal color negro
+ctx.fillStyle = "black";
+ctx.fillRect(0,0,350,70);
+
+//primera franja horizontal color rojo
+ctx.fillStyle = "#E23D0B";
+ctx.fillRect(0,70,350,70);
+
+//primera franja horizontal color amarillo
+ctx.fillStyle = "#FFC300";
+ctx.fillRect(0,140,350,70);
+
+</script>
+
+</body>
+</html>

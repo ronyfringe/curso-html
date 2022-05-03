@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LA BANDERA DE PERÚ</h2>
+<canvas id="myCanvas" width="300" height="200"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<style>
+    h2 {
+        margin-left: 10px;
+    }
+</style>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+//primera franja de la bandera
+ctx.fillStyle = "#E23D0B";
+ctx.fillRect(0,0,100,200);
+
+//segunda franja de la bandera
+ctx.fillStyle = "#E23D0B";
+ctx.fillRect(200,0,100,200);
+</script>
+
+</body>
+</html>
